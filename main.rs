@@ -100,6 +100,16 @@ fn nested_loop(n: i32) {
     }
 }
 
+fn let_without_assignment() {
+    let x;
+    x = 5;
+    println!("x == {}", x);
+
+    let mut y;
+    y = 5;
+    y += 1;
+    println!("y == {}", y);
+}
 /* Multi
 line comments
  */
@@ -172,6 +182,7 @@ fn main(/* you can touch this */) -> () {
     // nested loop example
     nested_loop(3);
 
+    let_without_assignment();
     this_return(); //will give error if semicolon removed
 
     interesting_block()
