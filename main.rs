@@ -17,6 +17,24 @@ fn with_param(x: i32) {
 fn sqrt(x: i32) -> i32 {
     x * x //; wrong as it will return - unit ()
 }
+
+fn this_works() {
+    let temp = 20;
+    if temp > 15 && temp < 27 {
+        println!("It's fairly comfortable in here!");
+        "Hello, world!"; // will not print
+        // "will not print" but will provide error as this is an if-block
+        () // this is correct as if-block return unit
+    }
+}
+
+fn this_return() -> String {
+    if true {
+        return "hello world!".to_string();
+    }
+    "".to_string()
+}
+
 /* Multi
 line comments
  */
@@ -75,4 +93,8 @@ fn main(/* you can touch this */) -> () {
     println!("z is {}", z);
 
     println!("4 + 5 == {}",  {{4 + 5}}); // this also valid in RUST, but will provide warning
+
+    this_works();
+
+    this_return(); //will give error
 }
