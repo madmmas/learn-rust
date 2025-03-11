@@ -61,6 +61,14 @@ fn interesting_if(temp: i32) {
     println!("{}", message);
 }
 
+fn fact(x: u32) -> u32 {
+    if x == 0 {
+        1
+    } else {
+        x * fact(x - 1)
+    }
+}
+
 /* Multi
 line comments
  */
@@ -123,6 +131,8 @@ fn main(/* you can touch this */) -> () {
     this_works();
 
     interesting_if(15);
+
+    println!("Fact of 5: {}", fact(5));
 
     this_return(); //will give error if semicolon removed
 
