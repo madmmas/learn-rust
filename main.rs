@@ -110,6 +110,14 @@ fn let_without_assignment() {
     }
     println!("let_without_assignment: x == {}", x);
 
+    // it is better to write the following way for the above case
+    let x= if is_raining {
+        500
+    } else {
+        600
+    };
+    println!("let_without_assignment: x == {}", x);
+
     let mut y;
     y = 5;
     y += 1;
