@@ -27,7 +27,7 @@ fn this_works() {
         () // this is correct as if-block return unit
     }
     if true {
-        println!("Here this if will be called with not error for end of semicolon!")
+        println!("Here this if will be called with no error for end of semicolon!")
     }
 }
 
