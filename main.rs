@@ -1,11 +1,15 @@
-/* Multi
-line comments
- */
-fn main(/* you can touch this */) {
+fn hello_world() {
     let name = "Masud";
     println!("Hello, {}", name /* here as well */);
     let middle = 7/3;
     println!("Middle: {}", middle);
+}
+/* Multi
+line comments
+ */
+fn main(/* you can touch this */) {
+
+    hello_world();
 
     let x = 5 + 3;
     let x = x * 2;
