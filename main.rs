@@ -96,5 +96,5 @@ fn main(/* you can touch this */) -> () {
 
     this_works();
 
-    this_return(); //will give error
+    this_return(); //will give error if semicolon removed
 }
