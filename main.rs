@@ -26,6 +26,9 @@ fn this_works() {
         // "will not print" but will provide error as this is an if-block
         () // this is correct as if-block return unit
     }
+    if true {
+        println!("Here this if will be called with not error for end of semicolon!")
+    }
 }
 
 fn this_return() -> String { // here &str will not work as that is static string
