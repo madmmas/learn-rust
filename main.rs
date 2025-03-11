@@ -102,13 +102,18 @@ fn nested_loop(n: i32) {
 
 fn let_without_assignment() {
     let x;
-    x = 5;
-    println!("x == {}", x);
+    let is_raining = true;
+    if is_raining {
+        x = 5;
+    } else {
+        x = 6;
+    }
+    println!("let_without_assignment: x == {}", x);
 
     let mut y;
     y = 5;
     y += 1;
-    println!("y == {}", y);
+    println!("let_without_assignment: y == {}", y);
 }
 /* Multi
 line comments
