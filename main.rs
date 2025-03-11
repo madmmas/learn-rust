@@ -17,4 +17,11 @@ fn main() {
     let name: &str = "James";
     let age: i8 = 34;
     println!("The answer is {} and age {}", name, age);
+
+    {
+        let x = 5;
+        let x = x + 1;
+        let x = x * 2;
+        println!("The answer is {}", x);
+    }
 }
