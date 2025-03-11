@@ -5,9 +5,10 @@ fn hello_world() {
     println!("Middle: {}", middle);
 }
 
-fn wih_param(x: &i32) {
+fn with_param(x: i32) {
+    println!("Print the first value of x: {}", x);
     let x = x + 3;
-    let x = x * 2;
+    let x = x * 4;
     let x = x - 6;
     let x = x / 2;
     println!("The answer is {}", x);
@@ -18,7 +19,7 @@ line comments
 fn main(/* you can touch this */) {
 
     hello_world();
-    wih_param(1200);
+    with_param(1200);
 
     let x = 5 + 3;
     let x = x * (6 - 2);
