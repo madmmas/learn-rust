@@ -1,6 +1,9 @@
-fn main() {
+/* Multi
+line comments
+ */
+fn main(/* you can touch this */) {
     let name = "Masud";
-    println!("Hello, {}", name);
+    println!("Hello, {}", name /* here as well */);
     let middle = 7/3;
     println!("Middle: {}", middle);
 
@@ -18,7 +21,7 @@ fn main() {
     let age: i8 = 34;
     println!("The answer is {} and age {}", name, age);
 
-    {
+    { // variable scope
         let x = 5;
         let x = x + 1;
         let x = x * 2;
