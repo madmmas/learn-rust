@@ -15,7 +15,7 @@ fn with_param(x: i32) {
 }
 
 fn sqrt(x: i32) -> i32 {
-    x * x
+    x * x //; wrong as it will return - unit ()
 }
 /* Multi
 line comments
