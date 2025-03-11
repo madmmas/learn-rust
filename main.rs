@@ -86,6 +86,20 @@ fn sum(low: i32, high: i32) -> i32 {
     sum
 }
 
+fn nested_loop(n: i32) {
+    let mut row = 0;
+    while row < n {
+        let mut col = 0;
+        while col < n {
+            // if statement in the print macro
+            print!("{}", if row == col { "X" } else { "O" });
+            col += 1;
+        }
+        println!("");
+        row += 1;
+    }
+}
+
 /* Multi
 line comments
  */
@@ -154,6 +168,9 @@ fn main(/* you can touch this */) -> () {
 
     // checking while loop
     assert_eq!(55, sum(1, 10));
+
+    // nested loop example
+    nested_loop(3);
 
     this_return(); //will give error if semicolon removed
 
