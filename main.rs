@@ -11,6 +11,6 @@ fn main() {
     println!("The answer is {}", x);
 
     let name: &str = "James";
-    let age: &str = "34";
+    let age: i8 = 34;
     println!("The answer is {} and age {}", name, age);
 }
