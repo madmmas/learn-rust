@@ -38,6 +38,12 @@ fn this_return() -> String { // here &str will not work as that is static string
     "".to_string()
 }
 
+fn interesting_block() {
+    let message = {
+        "Hello, world!"
+    };
+    println!("Interesting {}", message)
+}
 /* Multi
 line comments
  */
@@ -100,4 +106,6 @@ fn main(/* you can touch this */) -> () {
     this_works();
 
     this_return(); //will give error if semicolon removed
+
+    interesting_block()
 }
