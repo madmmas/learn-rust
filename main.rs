@@ -13,6 +13,10 @@ fn with_param(x: i32) {
     let x = x / 2;
     println!("The answer is {}", x);
 }
+
+fn sqrt(x: i32) -> i32 {
+    x * x
+}
 /* Multi
 line comments
  */
@@ -20,6 +24,7 @@ fn main(/* you can touch this */) {
 
     hello_world();
     with_param(1200);
+    println!("sqrt of {} is {}", 20, sqrt(20));
 
     let x = 5 + 3;
     let x = x * (6 - 2);
