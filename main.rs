@@ -4,18 +4,21 @@ fn hello_world() {
     let middle = 7/3;
     println!("Middle: {}", middle);
 }
+
+fn wih_param(x: &i32) {
+    let x = x + 3;
+    let x = x * 2;
+    let x = x - 6;
+    let x = x / 2;
+    println!("The answer is {}", x);
+}
 /* Multi
 line comments
  */
 fn main(/* you can touch this */) {
 
     hello_world();
-
-    let x = 5 + 3;
-    let x = x * 2;
-    let x = x - 6;
-    let x = x / 2;
-    println!("The answer is {}", x);
+    wih_param(1200);
 
     let x = 5 + 3;
     let x = x * (6 - 2);
