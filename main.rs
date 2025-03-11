@@ -9,4 +9,8 @@ fn main() {
     let x = x - 6;
     let x = x / 2;
     println!("The answer is {}", x);
+
+    let name: &str = "James";
+    let age: &str = "34";
+    println!("The answer is {} and age {}", name, age);
 }
