@@ -45,7 +45,8 @@ fn main(/* you can touch this */) {
     println!("4 + 5 == {}", x);
 
     let x: i32 = {
-        6 + 7; // this will give us a warning but nor error
+        6 + 7; // this will give us a warning but not error
+        let _ = 6 + 10; // this will not give us any warning or error
         println!("I will be print!");
         4 + 5 //; putting semicolon in the end of the block will give us error
         // because rust return () for this block
@@ -60,5 +61,5 @@ fn main(/* you can touch this */) {
     };
     println!("z is {}", z);
 
-    println!("4 + 5 == {}",  {{4 + 5}}); // this also valid in RUST
+    println!("4 + 5 == {}",  {{4 + 5}}); // this also valid in RUST, but will provide warning
 }
