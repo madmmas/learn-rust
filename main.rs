@@ -49,6 +49,7 @@ fn main(/* you can touch this */) {
         println!("I will be print!");
         4 + 5 //; putting semicolon in the end of the block will give us error
         // because rust return () for this block
+        // () is called "unit"
     };
     println!("4 + 5 == {}", x);
 
@@ -58,4 +59,6 @@ fn main(/* you can touch this */) {
         x
     };
     println!("z is {}", z);
+
+    println!("4 + 5 == {}",  {{4 + 5}}); // this also valid in RUST
 }
