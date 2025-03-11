@@ -20,7 +20,7 @@ fn sqrt(x: i32) -> i32 {
 /* Multi
 line comments
  */
-fn main(/* you can touch this */) {
+fn main(/* you can touch this */) -> () {
 
     hello_world();
     with_param(1200);
