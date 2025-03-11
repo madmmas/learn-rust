@@ -76,6 +76,16 @@ fn fact2(x: u32) -> u32 {
     x * fact(x - 1)
 }
 
+fn sum(low: i32, high: i32) -> i32 {
+    let mut sum = 0;
+    let mut low = low; // shadowing low as func param low is immutable
+    while low <= high {
+        sum += low;
+        low += 1;
+    }
+    sum
+}
+
 /* Multi
 line comments
  */
@@ -141,6 +151,9 @@ fn main(/* you can touch this */) -> () {
 
     println!("Fact of 5: {}", fact(5));
     println!("Fact of 6: {}", fact2(6));
+
+    // checking while loop
+    assert_eq!(55, sum(1, 10));
 
     this_return(); //will give error if semicolon removed
 
