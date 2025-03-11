@@ -51,7 +51,9 @@ fn interesting_if(temp: i32) {
     } else if temp <= 25 {
         "It's nice"
     } else if temp <= 30 {
-        "It's warm"
+        "It's warm" // putting semicolon here will be a problem or any other type
+        // 33 <- this one is error as well
+        // the message variable assumed static string by the compiler
     } else { // a must block as the if block assigned in a variable
         "It's hot!"
     };
