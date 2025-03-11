@@ -27,4 +27,16 @@ fn main(/* you can touch this */) {
         let x = x * 2;
         println!("The answer is {}", x);
     }
+
+    // interesting RUST
+    let x: () = (); //See: () works for both the type and the value.
+    let y: () = println!("Hello, world!" /* here the macro returns () - means empty result */);
+    assert_eq!(x, y); // asserting values of x and y where both are empty
+    println!("All units are the same!");
+
+    // put underscore for unused variable
+    let _unused = "UNUSED";
+
+    // it will print
+    let _print = println!("This will print even though variable is unused.");
 }
