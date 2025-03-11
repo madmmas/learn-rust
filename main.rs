@@ -28,7 +28,7 @@ fn this_works() {
     }
 }
 
-fn this_return() -> String {
+fn this_return() -> String { // here &str will not work as that is static string
     if true {
         return "hello world!".to_string();
     }
