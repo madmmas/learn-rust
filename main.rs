@@ -44,6 +44,21 @@ fn interesting_block() {
     };
     println!("Interesting {}", message)
 }
+
+fn interesting_if(temp: i32) {
+    let message = if temp <= 10 {
+        "It's cold!"
+    } else if temp <= 25 {
+        "It's nice"
+    } else if temp <= 30 {
+        "It's warm"
+    } else { // a must block as the if block assigned in a variable
+        "It's hot!"
+    };
+
+    println!("{}", message);
+}
+
 /* Multi
 line comments
  */
@@ -104,6 +119,8 @@ fn main(/* you can touch this */) -> () {
     println!("4 + 5 == {}",  {{4 + 5}}); // this also valid in RUST, but will provide warning
 
     this_works();
+
+    interesting_if(15);
 
     this_return(); //will give error if semicolon removed
 
